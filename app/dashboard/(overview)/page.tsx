@@ -3,7 +3,7 @@
  * @Author: liaolei
  * @Date: 2024-05-08 13:47:51
  * @LastEditors: liaolei
- * @LastEditTime: 2024-05-09 10:36:26
+ * @LastEditTime: 2024-05-10 10:07:53
  */
 // import { Card } from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
@@ -13,6 +13,11 @@ import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'dashboard',
+};
 
 export default async function Page() {
   // const revenue = await fetchRevenue();

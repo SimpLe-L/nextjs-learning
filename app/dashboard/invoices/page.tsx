@@ -3,7 +3,7 @@
  * @Author: liaolei
  * @Date: 2024-05-08 13:49:12
  * @LastEditors: liaolei
- * @LastEditTime: 2024-05-09 15:36:17
+ * @LastEditTime: 2024-05-10 10:06:56
  */
 import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
@@ -13,6 +13,11 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 export default async function Page({
   searchParams,

@@ -3,11 +3,16 @@
  * @Author: liaolei
  * @Date: 2024-05-09 15:57:13
  * @LastEditors: liaolei
- * @LastEditTime: 2024-05-09 15:57:28
+ * @LastEditTime: 2024-05-10 10:08:23
  */
 import Form from '@/app/ui/invoices/create-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'invoices-create',
+};
 
 export default async function Page() {
   const customers = await fetchCustomers();
